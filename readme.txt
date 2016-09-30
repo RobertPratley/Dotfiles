@@ -1,1 +1,1 @@
-Collected resources for clean installation of Mac OS on my computers.
+A collection of resources for the clean installation of Mac OS on my computers.
