@@ -12,6 +12,8 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
+# Stop Photos.app from opening automatically
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 ###############################################################################
 # Time and location preferences
@@ -57,6 +59,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
+# Display full POSIX path as Finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
 
@@ -95,6 +100,12 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Remove the auto-hiding Dock delay
+defaults write com.apple.dock autohide-delay -float 0
+
+# Remove the animation when hiding/showing the Dock
+defaults write com.apple.dock autohide-time-modifier -float 0.5
+
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
@@ -109,6 +120,12 @@ defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
+
+# Change number of columns in Launchpad (remove -int + number to revert to default)
+defaults write com.apple.dock springboard-columns -int 9
+
+# Change number of rows in Launchpad 
+defaults write com.apple.dock springboard-rows -int 9
 
 # Disable Dashboard
 defaults write com.apple.dashboard mcx-disabled -bool true
