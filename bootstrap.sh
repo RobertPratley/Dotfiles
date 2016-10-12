@@ -1,9 +1,10 @@
 SRC="$HOME/src"
 mkdir -p $SRC && cd $SRC
 
+git clone --recursive https://github.com/RobertPratley/Dotfiles.git
+
 echo "Setting up Mac..."
 
-git clone --recursive https://github.com/RobertPratley/Dotfiles.git
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
