@@ -1,8 +1,46 @@
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-alias c='clear'
-alias s='subl'
+
+#########################
+# Easier navigation
+#########################
+
 alias ..='cd ..'
 alias ...='cd ../../'
+alias gd='cd ~/Google\ Drive/'
+
+
+#########################
+# Switches
+#########################
+
+# Show or hide hidden files
+alias show='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+# Show or hide desktop contents
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+
+#########################
+# Shortcuts
+#########################
+alias g='git'
+
+
+
+alias c='clear'
+alias subl='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
+alias edit='subl'
+alias s='subl'
+alias f='open -a Finder ./'
+
+
 # Recursively remove .DS_Store files
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+
+
+
