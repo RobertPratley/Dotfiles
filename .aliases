@@ -25,6 +25,12 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 # Shortcuts
 #########################
 alias g='git'
+alias gs='git status'
+alias gaa='git add -A'
+alias gc='git commit -m'
+alias updateSrc='cd ~/src/; for repo in `ls`; do (cd "$repo"; git pull origin master); done;'
+alias updateGlyphsScripts='cd ~/Google\ Drive/Configs/Glyphs/Scripts/; for repo in `ls`; do (cd "$repo"; git pull origin master); done;'
+
 
 
 
