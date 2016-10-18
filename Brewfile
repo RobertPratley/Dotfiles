@@ -4,7 +4,6 @@ tap 'caskroom/cask'
 cask_args appdir: '/Applications'
 
 # Install Binaries
-brew 'mackup'
 brew 'tree'
 brew 'python3'
 

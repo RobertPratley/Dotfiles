@@ -1,0 +1,6 @@
+[storage]
+engine = google_drive
+directory = Configs/mackup
+
+[applications_to_sync]
+sublime-text-3
