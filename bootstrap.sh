@@ -27,7 +27,7 @@ brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-brew bundle -v
+brew bundle
 
 brew cask cleanup
 brew cleanup
@@ -58,3 +58,6 @@ for item in "${apps[@]}"; do rm -r ~/Library/Application\ Support/$item && ln -s
 #rm -r ~/Library/Application\ Support/Github\ for\ Mac/ && ln -sf ~/Google\ Drive/Configs/Github\ for\ Mac/ ~/Library/Application\ Support/
 # rm -r ~/Library/Application\ Support/Glyphs && ln -sf ~/Google\ Drive/Configs/Glyphs ~/Library/Application\ Support/
 #rm -r ~/Library/Application\ Support/Sublime\ Text\ 3/ && ln -sf ~/Google\ Drive/Configs/Sublime\ Text\ 3/ ~/Library/Application\ Support/
+
+# symlink glyphs scripts to ~/src
+# ln -sf ~/Google\ Drive/Configs/Glyphs/Scripts/* ~/src/Glyphs\ Scripts/
