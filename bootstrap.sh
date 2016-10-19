@@ -1,10 +1,3 @@
-echo ">> Creating src/Dotfiles folder in home directory...\n"
-src="$HOME/src/Dotfiles"
-mkdir -p $src && cd $src
-echo ">> Done.\n—\n—\n—\n>> Cloning dotfiles from github...\n"
-git clone https://github.com/RobertPratley/Dotfiles.git .
-echo ">> Done.\n—\n—\n—\n"
-
 files=".aliases .bash_prompt .hushlogin .inputrc .macos"
 for file in $files; do
 	echo ">> Creating symlink to $file in home directory\n"
