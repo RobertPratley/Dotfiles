@@ -28,7 +28,7 @@ brew cleanup
 echo ">> Done.\n—\n—\n—\nSetting Mac preferences...\n"
 
 # Set macOS preferences
-source .macos
+sudo source .macos
 echo ">> Done.\n—\n—\n—\nThe following applications have preferences to be synced."
 
 # Preference files to be symli""nked from an external directory
