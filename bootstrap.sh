@@ -1,4 +1,4 @@
-files=".aliases .bash_prompt .hushlogin .inputrc .macos"
+files=".bash_profile .aliases .bash_prompt .hushlogin .inputrc .macos"
 for file in $files; do
 	echo ">> Creating symlink to $file in home directory\n"
 	ln -s $src/$file $HOME/$file
