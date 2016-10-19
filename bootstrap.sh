@@ -1,7 +1,7 @@
 files=".bash_profile .aliases .bash_prompt .hushlogin .inputrc .macos"
 for file in $files; do
 	echo ">> Creating symlink to $file in home directory\n"
-	ln -s $src/$file $HOME/$file
+	ln -s $HOME/src/Dotfiles/$file $HOME/$file
 done
 echo ">> Symlinks complete.\n—\n—\n—\nSetting up Mac...\n"
 
