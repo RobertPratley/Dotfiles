@@ -31,8 +31,8 @@ echo ">> Done.\n—\n—\n—\nSetting Mac preferences...\n"
 source .macos
 echo ">> Done.\n—\n—\n—\nThe following applications have preferences to be synced."
 
-# Preference files to be symlinked from an external directory
-declare -a appprefs=("Alfred" "Glyphs" "Sublime Text")
+# Preference files to be symli""nked from an external directory
+declare -a appprefs=("Alfred" "Github Desktop" "Glyphs" "Sublime Text")
 
 # Print list to terminal
 for app in "${appprefs[@]}"; do echo "$app"; done
