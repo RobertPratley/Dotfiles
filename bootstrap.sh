@@ -20,7 +20,7 @@ brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-brew bundle
+brew bundle -v
 
 brew cask cleanup
 brew cleanup
@@ -43,9 +43,9 @@ read drivesetup
 # Symlink application preferences form Google Drive/Configs to /Library/Application support/
 
 # declare application names (as located in ~/Library/Application Preferences/)
-declare -a apps=('Alfred\ 3/' 'Github\ for\ Mac/' 'Sublime\ Text\ 3/')
+declare -a apps=("Alfred 3" "Github for Mac" "Sublime Text 3")
 
-for item in "${apps[@]}"; do rm -r ~/Library/Application\ Support/$item && ln -sf ~/Google\ Drive/Configs/$item ~/Library/Application\ Support/ && printf "$item preferences symlinked" | sed 's/[\/]//g'; done
+for item in "${apps[@]}"; do rm -r ~/Library/Application\ Support/"$item" && ln -sf ~/Google\ Drive/Configs/"$item" ~/Library/Application\ Support/ && printf "$item preferences symlinked\n"; done
 
 #rm -r ~/Library/Application\ Support/Alfred\ 3/ && ln -sf ~/Google\ Drive/Configs/Alfred\ 3/ ~/Library/Application\ Support/
 #rm -r ~/Library/Application\ Support/Github\ for\ Mac/ && ln -sf ~/Google\ Drive/Configs/Github\ for\ Mac/ ~/Library/Application\ Support/
