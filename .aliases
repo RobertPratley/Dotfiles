@@ -35,7 +35,7 @@ alias updateGlyphsScripts='cd ~/Google\ Drive/Configs/Glyphs/Scripts/; for repo 
 
 
 alias c='clear'
-alias subl='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias edit='subl'
 alias s='subl'
 alias sdir='s $PWD'

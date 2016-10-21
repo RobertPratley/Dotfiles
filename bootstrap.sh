@@ -5,6 +5,8 @@ for file in $files; do
 done
 printf ">> Symlinks complete.\n—\n—\n—\nSetting up Mac...\n"
 
+printf "Installing Command Line Tools\n"
+xcode-select --install
 
 printf "Installing Homebrew...\n"
 
@@ -36,7 +38,7 @@ declare -a appprefs=("Alfred" "Github Desktop" "Glyphs" "Sublime Text")
 
 # Print list to terminal
 for app in "${appprefs[@]}"; do printf "$app"; done
-printf "Install the above and set up Google Drive to continue. When complete, type 'y': "
+printf "Install the above, open, quit, and set up Google Drive to continue. When complete, type 'y': "
 read drivesetup
 [[ "$drivesetup" == 'y' ]] && printf "Syncing application preferences...\n"
 

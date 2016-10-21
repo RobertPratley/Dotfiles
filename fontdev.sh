@@ -1,7 +1,10 @@
 cd $HOME/src/
 
-# Fontview
+# RoboFab
+git clone https://github.com/robofab-developers/robofab.git
 
-git clone --recursive https://github.com/googlei18n/fontview.git
-cd fontview
-python2.7 build.py && ./build/FontView.app/Contents/MacOS/fontview
+# fontTools
+git clone https://github.com/fonttools/fonttools.git
+
+# point Python to Robofab and fontTools
+cp .pth /Library/Python/2.7/site-packages
