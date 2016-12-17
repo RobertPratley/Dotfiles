@@ -9,6 +9,7 @@ brew 'python3'
 
 # Install Apps
 cask 'alfred'
+cask 'iterm2'
 cask 'firefox'
 cask 'flux'
 cask 'github-desktop'
